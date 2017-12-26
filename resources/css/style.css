@@ -1,0 +1,139 @@
+/***************************
+HEADER & NAVIGATION
+***************************/
+
+header {
+	display: flex;
+	height: 64px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	padding-left: 24px;
+}
+
+#colmar {
+	font-style: bold;
+	font-weight: 600;
+	padding-left: 5px;
+}
+
+#nav-desktop {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	padding-right: 24px;
+}
+
+#nav-mobile {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+}
+
+nav span {
+	padding: 0 16px;
+}
+
+nav span a {
+	text-decoration: none;
+	color: #000;
+}
+
+@media only screen and (max-width: 780px) {
+ 	#nav-desktop,
+ 	.logo {
+  		display: none;
+  	}
+}
+
+@media only screen and (min-width: 780px) {
+ 	#nav-mobile {
+  		display: none;
+  	}
+}
+
+/***************************
+BANNER
+***************************/
+
+.banner {
+	background-color: lightgray;
+	display: flex;
+}
+
+.banner-image-content img {
+	width: 100%;
+}
+
+.banner-column-left {
+	width: 60%;
+	padding: 32px 24px;
+	display: flex;
+}
+
+.banner-column-right {
+	width: 40%;
+	display: flex;
+}
+
+.banner-text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 24px;
+	width: 90%;
+}
+
+.banner-text-content h1 {
+	font-size: 3em;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+.banner-text-content p {
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	padding: 15px 0;
+}
+
+.button {
+	background-color: gray;
+	padding: 8px 0;
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	color: white;
+	margin-top: 15px;
+}
+
+@media only screen and (max-width: 780px) {
+ 	.banner {
+ 		flex-direction: column;
+ 	}
+
+ 	.banner-column-left {
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+
+ 	.banner-column-right {
+ 		width: 100%;
+ 	}
+
+ 	.banner-text-content {
+ 		padding: 32px 16px;
+ 		width: 100%;
+ 	}
+
+ 	.button {
+ 		width: 100%;
+ 	}
+}
+
+
+
