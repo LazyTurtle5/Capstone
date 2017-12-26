@@ -44,6 +44,7 @@ nav span a {
 }
 
 @media only screen and (max-width: 780px) {
+ 	
  	#nav-desktop,
  	.logo {
   		display: none;
@@ -51,6 +52,7 @@ nav span a {
 }
 
 @media only screen and (min-width: 780px) {
+ 	
  	#nav-mobile {
   		display: none;
   	}
@@ -112,6 +114,7 @@ BANNER
 }
 
 @media only screen and (max-width: 780px) {
+ 	
  	.banner {
  		flex-direction: column;
  	}
@@ -134,6 +137,134 @@ BANNER
  		width: 100%;
  	}
 }
+
+/***************************
+INFO
+***************************/
+
+.info {
+	display: flex;
+	padding: 32px 0;
+}
+
+.info-column-left {
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+	padding: 0 24px;
+}
+
+.info-column-right {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+}
+
+.info-text-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-text-content h1 {
+	padding: 32px 0 24px 0;
+}
+
+.info-text-content p {
+	padding-bottom: 24px;
+}
+
+.info-text-content span {
+	padding-top: 24px;
+}
+
+.info-image-content img {
+	width: 100%;
+}
+
+.orientation,
+.campus,
+.guest-lecture {
+	display: flex;
+	border: 1px solid lightgray;
+}
+
+.small-image-content {
+	width: 35%;
+	padding: 16px 16px;
+}
+
+.small-image-content img {
+	width: 100%;
+}
+
+.small-text-content {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.small-text-content h2,
+.small-text-content p,
+.small-text-content span {
+	padding: 8px 0;
+}
+
+@media only screen and (max-width: 780px) {
+ 	
+ 	.info-column-left,
+ 	#desktop-info {
+ 		display: none;
+ 	}
+
+ 	.info-column-right {
+ 		width: 100%;
+ 	}
+
+ 	.small-image-content {
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+
+ 	.small-image-content img {
+ 		width: 100%;
+ 		
+ 	}
+
+ 	#mobile-info {
+		width: 100%;
+	}
+
+ 	.small-text-content {
+ 		width: 100%;
+ 	}
+
+ 	.orientation,
+	.campus,
+	.guest-lecture {
+		flex-direction: column;
+		border: none;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+ 	
+	#mobile-info {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
