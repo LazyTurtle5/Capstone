@@ -1,3 +1,25 @@
+
+h1,h2,h3,p,span,.button {
+	font-family: 'Nunito', sans-serif;
+}
+
+h1,h2,h3,nav span {
+	color: #4a4a4a;
+}
+
+p {
+	line-height: 1.25;
+	letter-spacing: 0.5px;
+}
+
+p,span {
+	color: #767676;
+}
+
+a {
+	text-decoration: none;
+}
+
 /***************************
 HEADER & NAVIGATION
 ***************************/
@@ -63,7 +85,7 @@ BANNER
 ***************************/
 
 .banner {
-	background-color: lightgray;
+	background-color: #d8d8d8;
 	display: flex;
 }
 
@@ -103,14 +125,22 @@ BANNER
 	padding: 15px 0;
 }
 
-.button {
-	background-color: gray;
+.button a {
+	background-color: #4a4a4a;
 	padding: 8px 0;
 	display: flex;
 	justify-content: space-around;
 	width: 80%;
 	color: white;
 	margin-top: 15px;
+	font-size: 1.25em;
+	transition-property: background-color, color;
+	transition-duration: 1s;
+}
+
+.button a:hover {
+	background-color: #fff;
+	color: #4a4a4a;
 }
 
 @media only screen and (max-width: 780px) {
@@ -169,6 +199,8 @@ INFO
 
 .info-text-content h1 {
 	padding: 32px 0 24px 0;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 .info-text-content p {
@@ -210,6 +242,11 @@ INFO
 .small-text-content p,
 .small-text-content span {
 	padding: 8px 16px;
+}
+
+.small-text-content h2 {
+	font-size: 1.5em; 
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 780px) {
@@ -276,7 +313,7 @@ INFO
 	}
 
 	.guest-lecture {
-		background-color: gray;
+		background-color: #d8d8d8;
 	}
 }
 
@@ -285,13 +322,15 @@ LEARNING
 ***************************/
 
 .learning {
-	background-color: lightgray;
+	background-color: #eaebec;
 	padding-bottom: 32px;
 }
 
 .learning-title {
 	text-align: center;
 	padding: 32px 0;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 /***************************
@@ -317,12 +356,14 @@ STUDY COURSES
 .course-text-content {
 	background-color: #fff;
 	padding: 0 16px 16px 16px;
-	height: 120px;
+	height: 150px;
 
 }
 
 .course-text-content h3 {
 	padding: 16px 0;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .course-text-content p {
@@ -341,9 +382,11 @@ STUDY COURSES
 	padding-bottom: 8px;
 }
 
-.mobile-courses h3 {
+.mobile-courses h2 {
 	padding: 16px 0 24px 16px;
 	background-color: lightgray;
+	font-size: 1.25em;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 780px) {
@@ -372,6 +415,8 @@ THESIS
 	text-align: center;
 	flex-direction: column;
 	padding: 32px 0;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 .thesis-columns {
@@ -400,6 +445,8 @@ THESIS
 
 .thesis-text-content h3 {
 	padding-bottom: 8px;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .fisma,
@@ -408,7 +455,7 @@ THESIS
 }
 
 .fisma {
-	background-color: gray;
+	background-color: #d8d8d8;
 }
 
 .small-image-content2 {
@@ -425,6 +472,12 @@ THESIS
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.small-text-content2 h2 {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-bottom: 8px;
 }
 
 .thesis-image-content embed {
@@ -452,7 +505,8 @@ footer {
 	display: flex;
 }
 
-span {
+#copyright,
+.tp span {
 	width: 100%;
 	padding: 16px 0;
 }
@@ -468,6 +522,13 @@ span {
 
 .tp span {
 	padding-right: 24px;
+}
+
+#fb,
+#twitter {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
 }
 
 @media only screen and (max-width: 780px) {
