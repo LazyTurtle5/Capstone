@@ -163,7 +163,7 @@ BANNER
  		width: 100%;
  	}
 
- 	.button {
+ 	.button a {
  		width: 100%;
  		margin-top: 24px;
  		margin-bottom: 16px;
@@ -384,10 +384,15 @@ STUDY COURSES
 
 .mobile-courses h2 {
 	padding: 16px 0 24px 16px;
-	background-color: lightgray;
+	background-color: #d8d8d8;
 	font-size: 1.25em;
 	font-weight: bold;
 }
+
+.mobile-courses h2 a {
+	color: #4a4a4a;
+}
+
 
 @media only screen and (max-width: 780px) {
 
